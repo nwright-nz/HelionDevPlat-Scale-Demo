@@ -14,9 +14,7 @@ type Hello struct {
 
 func (p *Hello) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	index, _ := helpers.FetchIndex()
-	http.HandleFunc("/images/", func(w http.ResponseWriter, r *http.Request) {
-    http.ServeFile(w, r, r.URL.Path[1:])
-	})
+	
 	styledTemplate.Execute(w, Body{Body: fmt.Sprintf(`
 <div class="hello">
 	
