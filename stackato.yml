@@ -1,5 +1,6 @@
-app-dir: C:/Users/wrighnig/Documents/Code/Repos/lattice-app
 buildpack: https://github.com/heroku/heroku-buildpack-go
 disk_quota: 2048
 memory: 256
 name: HelionPlat-Scale
+domain: api.helionit.io
+
